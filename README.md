@@ -1,5 +1,6 @@
 # KOT3 — Hugo Blox Academic
 
+
 Website for **Koopman Operator Theory: Fundamentals, Approximations and Applications 3**, held December 11–13, 2026 at Kyoto University.
 
 Published site: <https://y-susuki.github.io/kot3/>
