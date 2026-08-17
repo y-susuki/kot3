@@ -1,0 +1,63 @@
+hugoblox:
+  schema: "2.0"
+  identity:
+    name: "KOT3"
+    organization: "Kyoto University"
+    type: organization
+    tagline: "Koopman Operator Theory · Kyoto 2026"
+    description: "The third international workshop on Koopman Operator Theory, December 11–13, 2026 at Kyoto University."
+  theme:
+    mode: dark
+    pack: default
+    colors:
+      primary: "#00205b"
+      secondary: "#f2c94c"
+      neutral: slate
+    surfaces:
+      background: "#00205b"
+      foreground: "#f4f6fa"
+      header:
+        background: "#00205b"
+        foreground: "#ffffff"
+      footer:
+        background: "#00163f"
+        foreground: "#ffffff"
+  typography:
+    pack: academic
+  layout:
+    radius: md
+    spacing: spacious
+    avatar_shape: circle
+  header:
+    enable: true
+    style: navbar
+    sticky: true
+    align: center
+    search: false
+    theme_toggle: false
+    theme_picker: false
+    language_switcher: false
+    cta:
+      enable: true
+      text: "Get updates"
+      url: "#contact"
+  footer:
+    style: minimal
+    language_switcher: false
+    text: "Koopman Operator Theory: Fundamentals, Approximations and Applications 3 · Kyoto, Japan"
+  copyright:
+    notice: "© {year} KOT3 Organizing Committee"
+    license:
+      type: custom
+      allow_derivatives: false
+      share_alike: false
+      allow_commercial: false
+  content:
+    math:
+      enable: true
+    toc:
+      enable: false
+    reading_time:
+      enable: false
+  search:
+    enable: false

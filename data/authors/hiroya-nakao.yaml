@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: hiroya-nakao
+name: {display: Hiroya Nakao, family: Nakao, given: Hiroya}
+role: Japan
+affiliations: [{name: Institute of Science Tokyo}]
+links: [{icon: hero/link, url: 'https://sites.google.com/sc.e.titech.ac.jp/hiroya-nakao/'}]
+user_groups: [Organizing Committee]
+weight: 5

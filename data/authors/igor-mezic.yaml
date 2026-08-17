@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: igor-mezic
+name: {display: Igor Mezić, family: Mezić, given: Igor}
+role: USA
+affiliations: [{name: University of California, Santa Barbara}]
+links: [{icon: hero/link, url: 'https://me.ucsb.edu/people/igor-mezic'}]
+user_groups: [Organizing Committee]
+weight: 2

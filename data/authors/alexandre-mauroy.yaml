@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: alexandre-mauroy
+name: {display: Alexandre Mauroy, family: Mauroy, given: Alexandre}
+role: Belgium
+affiliations: [{name: University of Namur}]
+links: [{icon: hero/link, url: 'https://www.unamur.be/en/profil/mauroya'}]
+user_groups: [Organizing Committee]
+weight: 4

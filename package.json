@@ -1,0 +1,19 @@
+{
+  "name": "kot3-hugoblox-academic",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "description": "KOT3 international workshop website built with Hugo Blox Academic",
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo --minify --destination dist && pnpm run pagefind",
+    "pagefind": "pagefind --site dist"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "pagefind": "^1.4.0",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.12"
+  }
+}

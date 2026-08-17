@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: yoshihiko-susuki
+name: {display: Yoshihiko Susuki, family: Susuki, given: Yoshihiko}
+role: Chair · Japan
+affiliations: [{name: Kyoto University}]
+links: [{icon: hero/link, url: 'https://y-susuki.github.io/'}]
+user_groups: [Organizing Committee]
+weight: 1

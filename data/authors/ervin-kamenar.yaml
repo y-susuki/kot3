@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: ervin-kamenar
+name: {display: Ervin Kamenar, family: Kamenar, given: Ervin}
+role: Croatia
+affiliations: [{name: University of Rijeka}]
+links: [{icon: hero/link, url: 'https://riteh.uniri.hr/en/osoba/ervin-kamenar/'}]
+user_groups: [Organizing Committee]
+weight: 3
