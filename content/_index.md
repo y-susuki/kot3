@@ -39,6 +39,8 @@ sections:
 
         An international forum bringing together researchers in dynamical systems, data-driven modeling, computation, and control. Three days of ideas, exchange, and new connections in Kyoto City, Japan
 
+        Previous editions: [KOT1 — Otranto, Italy (2024)](https://www.cmcc.it/lectures_conferences/koopman-operator-theory-fundamentals-approximations-and-applications) and [KOT2 — Cres, Croatia (2025)](https://uniri.hr/en/science-and-research/koopman-operator-theory-fundamentals-approximations-and-applications/).
+
         ### Fundamentals · Approximations · Applications
 
         We will explore spectral foundations, reliable computational and data-driven methods, and new applications of Koopman operator theory across science and technology.
