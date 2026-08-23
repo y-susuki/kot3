@@ -111,6 +111,23 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
 .kot3-about .prose p { color: var(--kot-body) !important; }
 .kot3-about .prose h2 { color: var(--kot-blue); font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
 .kot3-about .prose h3 { color: var(--kot-ink); font-size: clamp(1.5rem, 2.5vw, 2.15rem); margin-top: 2.5rem; }
+.kot3-about .prose a,
+.kot3-about .prose a:visited {
+  color: var(--kot-school) !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .22em;
+}
+.kot3-about .prose a:hover {
+  color: var(--kot-school-deep) !important;
+  background: #dbe5f2;
+  border-radius: .2rem;
+}
+.kot3-about .prose a:focus-visible {
+  outline-color: var(--kot-school);
+  background: #fff;
+}
 
 .kot3-editions { background: var(--kot-school-deep) !important; }
 .kot3-editions h2 { color: #fff !important; font-size: clamp(2.35rem, 4.4vw, 4.4rem); line-height: 1.06; letter-spacing: -.035em; }
