@@ -188,6 +188,7 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
 .kot3-access-grid h3 { margin-top: 0; color: var(--kot-school) !important; font-size: 1.3rem; }
 .kot3-access-grid p, .kot3-access-grid li { color: var(--kot-body) !important; }
 .kot3-access-grid a { color: var(--kot-school) !important; font-weight: 700; }
+.kot3-access-grid strong { color: var(--kot-body) !important; }
 
 .kot3-accommodation { background: var(--kot-school-light) !important; color: var(--kot-ink); }
 .kot3-accommodation .text-3xl { color: var(--kot-school) !important; }
