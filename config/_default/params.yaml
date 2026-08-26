@@ -37,10 +37,6 @@ hugoblox:
     theme_toggle: false
     theme_picker: false
     language_switcher: false
-    cta:
-      enable: true
-      text: "Get updates"
-      url: "#contact"
   footer:
     style: minimal
     language_switcher: false
