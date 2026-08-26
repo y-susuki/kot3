@@ -141,26 +141,69 @@ sections:
       max_columns: 3
       css_class: kot3-committee
 
-  - block: contact-info
+  - block: markdown
     id: access
     content:
-      title: Access & Venue
-      subtitle: Clock Tower Centennial Hall, Kyoto University
-      visit_title: Venue & Directions
-      connect_title: Details of location
-      address:
-        lines:
-          - Clock Tower Centennial Hall
-          - Kyoto University
-          - Yoshida-honmachi, Sakyo-ku
-          - Kyoto 606-8501, Japan
-          - Kyoto City Bus 206 from Kyoto Station — about 30 minutes
-          - Get off at Kyodai Seimon-mae or Hyakumanben
-          - About a 20-minute walk from Keihan Demachiyanagi Station
-      map_url: 'https://www.kyoto-u.ac.jp/en/access/main-campus-map'
-      show_form: false
+      title: "Access & Venue"
+      text: |-
+        ## Clock Tower Centennial Hall, Kyoto University
+
+        Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501, Japan
+
+        [View the official Kyoto University Main Campus map](https://www.kyoto-u.ac.jp/en/access/main-campus-map)
+
+        <div class="kot3-access-grid">
+          <article>
+            <h3>From JR Kyoto Station</h3>
+            <p>This is the arrival station for the Tokaido and Sanyo Shinkansen.</p>
+            <ul>
+              <li>Take Kyoto City Bus No. 206 toward Gion and Kiyomizu-dera, and get off at <strong>Kyodai Seimon-mae</strong> or <strong>Hyakumanben</strong>.</li>
+              <li>Alternatively, take Kyoto City Bus No. 7 toward Ginkakuji, and get off at <strong>Hyakumanben</strong>.</li>
+              <li>The bus journey takes about 30 minutes under normal traffic conditions. Please allow extra time during busy periods.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>From Kansai International Airport (KIX)</h3>
+            <p>Travel first to JR Kyoto Station, then follow the directions from Kyoto Station shown here.</p>
+            <ul>
+              <li>The JR-West Kansai-Airport Express <strong>HARUKA</strong> provides direct train service to Kyoto Station.</li>
+              <li>Airport limousine buses also operate between KIX and Kyoto Station.</li>
+            </ul>
+            <p>Check current timetables and fares on the <a href="https://www.westjr.co.jp/travel-information/en/train-usage-guide/howto/guide/">JR-West website</a> or the <a href="https://www.kate.co.jp/en/timetable/detail/KY">Kansai Airport Limousine Bus website</a>.</p>
+          </article>
+        </div>
+
+        ### From Keihan Demachiyanagi Station
+
+        The venue is approximately a 20-minute walk from Demachiyanagi Station.
     design:
+      columns: '1'
       css_class: kot3-access
+      spacing:
+        padding: ["7rem", "0", "7rem", "0"]
+
+  - block: markdown
+    id: accommodation
+    content:
+      title: "Accommodation"
+      text: |-
+        Participants are kindly requested to arrange and pay for their own accommodation. The organizing committee will not make hotel reservations on behalf of participants.
+
+        The workshop will be held at Kyoto University's Yoshida Campus. It is not necessary to stay close to the campus: hotels in central Kyoto, including the areas around Kyoto Station, Shijo–Karasuma, Kawaramachi, and Sanjo, offer convenient access to the venue by public transportation or taxi.
+
+        As accommodation in Kyoto can become fully booked, especially during busy travel periods, we recommend making a reservation well in advance.
+
+        The following websites may be useful when searching for accommodation:
+
+        - [Official Kyoto City Tourism Guide — Accommodation](https://kyoto.travel/en/accommodations/)
+        - [Booking.com — Kyoto](https://www.booking.com/city/jp/kyoto.html)
+        - [Agoda — Kyoto](https://www.agoda.com/city/kyoto-jp.html)
+        - [Expedia — Kyoto Hotels](https://www.expedia.com/Kyoto-Hotels.d6131486.Travel-Guide-Hotels)
+
+        Please check the location, cancellation policy, taxes, and other conditions directly with the hotel or booking service before confirming your reservation.
+    design:
+      columns: '1'
+      css_class: kot3-accommodation
       spacing:
         padding: ["7rem", "0", "7rem", "0"]
 

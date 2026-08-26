@@ -98,6 +98,7 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
 .kot3-program .text-3xl,
 .kot3-committee h2,
 .kot3-access h2,
+.kot3-accommodation .text-3xl,
 .kot3-contact .text-3xl {
   font-size: clamp(2.35rem, 4.4vw, 4.4rem);
   line-height: 1.06;
@@ -179,9 +180,22 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
 
 .kot3-access { background: var(--kot-school) !important; color: white; }
 .kot3-access h2, .kot3-access h3 { color: white !important; }
-.kot3-access p { color: var(--kot-on-dark) !important; }
+.kot3-access .prose { max-width: 1100px; }
+.kot3-access p, .kot3-access li { color: var(--kot-on-dark) !important; }
 .kot3-access a { color: var(--kot-accent) !important; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .22em; }
-.kot3-access .bg-white { border: 2px solid rgba(255,255,255,.28) !important; }
+.kot3-access-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem; margin-block: 2.5rem; }
+.kot3-access-grid article { padding: 1.5rem; border: 2px solid #9eafc5; border-top: 6px solid var(--kot-accent); border-radius: .8rem; background: #fff; }
+.kot3-access-grid h3 { margin-top: 0; color: var(--kot-school) !important; font-size: 1.3rem; }
+.kot3-access-grid p, .kot3-access-grid li { color: var(--kot-body) !important; }
+.kot3-access-grid a { color: var(--kot-school) !important; font-weight: 700; }
+
+.kot3-accommodation { background: var(--kot-school-light) !important; color: var(--kot-ink); }
+.kot3-accommodation .text-3xl { color: var(--kot-school) !important; }
+.kot3-accommodation .prose { max-width: 920px; color: var(--kot-body); }
+.kot3-accommodation .prose p, .kot3-accommodation .prose li { color: var(--kot-body) !important; }
+.kot3-accommodation .prose a { color: var(--kot-school) !important; font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .22em; }
+.kot3-accommodation .prose a:hover { color: var(--kot-school-deep) !important; background: #fff; border-radius: .2rem; }
+.kot3-accommodation .prose a:focus-visible { outline-color: var(--kot-school); background: #fff; }
 
 .kot3-contact { background: var(--kot-school-light) !important; color: var(--kot-ink); }
 .kot3-contact .text-3xl { color: var(--kot-school) !important; }
@@ -227,5 +241,6 @@ footer a {
   .kot3-about .flex, .kot3-about .max-w-prose { align-items: flex-start; }
   .kot3-committee .grid.grid-cols-1 { width: min(100%, 420px) !important; }
   .kot3-program-grid { grid-template-columns: 1fr; }
+  .kot3-access-grid { grid-template-columns: 1fr; }
   .kot3-sponsors .prose { grid-template-columns: 1fr; }
 }
