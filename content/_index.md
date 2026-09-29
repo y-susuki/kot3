@@ -212,6 +212,7 @@ sections:
     content:
       title: "Contact"
       text: |-
+        **At this time, we are not accepting registrations, primarily due to venue and budget constraints. While you may be able to participate if a cancellation occurs, we appreciate your understanding.**
 
         Please contact the organizing committee at [susuki.yoshihiko.5c@kyoto-u.ac.jp](mailto:susuki.yoshihiko.5c@kyoto-u.ac.jp).
 
