@@ -88,7 +88,7 @@ sections:
     content:
       title: "Confirmed Speakers"
       text: |-
-        Speaker names, affiliations, and presentation titles are listed below. Select **View abstract** to read a presentation abstract.
+        Speaker names, affiliations, and presentation titles, including those of poster presenters, are listed below. Select **View abstract** to read a presentation abstract.
     design:
       columns: '1'
       css_class: kot3-speakers
