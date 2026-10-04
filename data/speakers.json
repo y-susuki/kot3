@@ -322,7 +322,7 @@
     "abstract": "Predicting the dynamics of a parameterized system at unobserved parameter values from limited time-series data at other parameter values is essential for forecasting critical transitions, reconstructing bifurcation diagrams, and designing parameter-dependent control in complex systems. To this end, we present a method for constructing a parameterized extended dynamic mode decomposition (EDMD) for such systems. By combining EDMD models learned from observed time-series data at each observed parameter value, the method interpolates/extrapolates the system's behavior to unseen parameter values."
   },
   {
-    "name": "YAMAMOTO Taichi",
+    "name": "Taichi Yamamoto",
     "family_sort": "yamamoto",
     "affiliation": "University of Tokyo, Graduate school of Frontier Science",
     "title": "Koopman Spectral Analysis via Ridge Regression in Reproducing Kernel Hilbert Spaces",
