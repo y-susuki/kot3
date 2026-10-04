@@ -141,10 +141,77 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
   border-block: 2px solid #6f8fbb;
 }
 .kot3-speakers .text-3xl { color: #fff !important; }
-.kot3-speakers .prose { max-width: 820px; color: #e6edf7 !important; }
-.kot3-speakers .prose h2 { color: var(--kot-accent) !important; font-size: clamp(1.5rem, 2.5vw, 2.15rem); }
-.kot3-speakers .prose p { color: #e6edf7 !important; }
-.kot3-speakers .prose h3 { display: inline-block; margin-top: 2rem; padding: .65rem 1rem; border: 2px solid #fff; border-radius: 999px; background: #fff; color: #00205b !important; font-size: max(1rem, 16px); letter-spacing: .08em; text-transform: uppercase; }
+.kot3-speakers-header { max-width: 880px; margin-bottom: 2.5rem; }
+.kot3-speakers-intro,
+.kot3-speakers-intro p { color: var(--kot-on-dark) !important; }
+.kot3-speakers-intro { margin-top: 1rem; font-size: 1.05rem; }
+.kot3-speakers-intro strong { color: #fff; }
+.kot3-speaker-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.25rem; }
+.kot3-speaker-card {
+  display: flex;
+  min-width: 0;
+  min-height: 19rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border: 2px solid #9eafc5;
+  border-top: 6px solid var(--kot-accent);
+  border-radius: .8rem;
+  background: #fff;
+  color: var(--kot-body);
+}
+.kot3-speaker-card h3 { margin: 0; color: var(--kot-school); font-size: 1.3rem; }
+.kot3-speaker-affiliation { margin: .55rem 0 0; color: #425b72; font-size: 1rem; line-height: 1.5; }
+.kot3-speaker-talk-title { margin: 1.25rem 0 0; color: var(--kot-ink); font-weight: 700; line-height: 1.45; }
+.kot3-abstract-button,
+.kot3-dialog-done {
+  width: fit-content;
+  margin-top: 1.5rem;
+  padding: .7rem 1rem;
+  border: 2px solid var(--kot-school);
+  border-radius: .45rem;
+  background: var(--kot-school);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.kot3-abstract-button:hover,
+.kot3-dialog-done:hover { border-color: var(--kot-school-deep); background: var(--kot-school-deep); }
+.kot3-abstract-dialog {
+  width: min(760px, calc(100vw - 2rem));
+  max-height: min(82vh, 760px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 3px solid var(--kot-school);
+  border-radius: .9rem;
+  background: #fff;
+  color: var(--kot-body);
+  box-shadow: 0 24px 70px rgba(0,0,0,.32);
+}
+.kot3-abstract-dialog::backdrop { background: rgba(0,22,63,.78); backdrop-filter: blur(2px); }
+.kot3-abstract-dialog-inner { position: relative; padding: clamp(1.5rem, 4vw, 3rem); }
+.kot3-dialog-close-form { position: absolute; top: .75rem; right: .85rem; margin: 0; }
+.kot3-dialog-close {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 2px solid #9eafc5;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--kot-school);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.kot3-dialog-close:hover { background: var(--kot-school-light); }
+.kot3-dialog-eyebrow { margin: 0 3.5rem .7rem 0; color: var(--kot-school); font-size: .9rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.kot3-abstract-dialog h3 { margin: 0 3rem 0 0; color: var(--kot-school); font-size: clamp(1.45rem, 3vw, 2rem); line-height: 1.25; }
+.kot3-dialog-speaker { margin: .9rem 0 1.5rem; color: #425b72; font-weight: 700; }
+.kot3-dialog-abstract { color: var(--kot-body); line-height: 1.75; white-space: pre-line; }
+.kot3-dialog-actions { margin: 0; }
 
 .kot3-program { background: var(--kot-school-light) !important; color: var(--kot-ink); }
 .kot3-program .text-3xl { color: var(--kot-school) !important; }
@@ -243,6 +310,12 @@ footer a {
   .kot3-about .flex, .kot3-about .max-w-prose { align-items: flex-start; }
   .kot3-committee .grid.grid-cols-1 { width: min(100%, 420px) !important; }
   .kot3-program-grid { grid-template-columns: 1fr; }
+  .kot3-speaker-grid { grid-template-columns: 1fr; }
+  .kot3-speaker-card { min-height: 0; }
   .kot3-access-grid { grid-template-columns: 1fr; }
   .kot3-sponsors .prose { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 721px) and (max-width: 1050px) {
+  .kot3-speaker-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }

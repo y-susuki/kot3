@@ -1,0 +1,83 @@
+{{/* Hugo Blox: Confirmed speakers with accessible abstract dialogs */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+{{ $title := "" }}
+{{ with index $content "title" }}{{ $title = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+{{ $text := "" }}
+{{ with index $content "text" }}{{ $text = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+{{ $speakers := hugo.Data.speakers }}
+
+<div class="kot3-speakers-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <header class="kot3-speakers-header">
+    {{ with $title }}
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">{{ . }}</h2>
+    {{ end }}
+    {{ with $text }}
+      <div class="kot3-speakers-intro">{{ . }}</div>
+    {{ end }}
+  </header>
+
+  <div class="kot3-speaker-grid" role="list">
+    {{ range $index, $speaker := $speakers }}
+      {{ $dialogID := printf "speaker-abstract-%d" $index }}
+      {{ $titleID := printf "speaker-title-%d" $index }}
+      <article class="kot3-speaker-card" role="listitem">
+        <div class="kot3-speaker-card-body">
+          <h3>{{ $speaker.name }}</h3>
+          <p class="kot3-speaker-affiliation">{{ $speaker.affiliation }}</p>
+          <p class="kot3-speaker-talk-title">{{ $speaker.title }}</p>
+        </div>
+        <button
+          class="kot3-abstract-button"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="{{ $dialogID }}"
+          data-abstract-dialog="{{ $dialogID }}">
+          View abstract
+        </button>
+      </article>
+
+      <dialog class="kot3-abstract-dialog" id="{{ $dialogID }}" aria-labelledby="{{ $titleID }}">
+        <div class="kot3-abstract-dialog-inner">
+          <form method="dialog" class="kot3-dialog-close-form">
+            <button class="kot3-dialog-close" value="close" aria-label="Close abstract">×</button>
+          </form>
+          <p class="kot3-dialog-eyebrow">Abstract</p>
+          <h3 id="{{ $titleID }}">{{ $speaker.title }}</h3>
+          <p class="kot3-dialog-speaker">{{ $speaker.name }} · {{ $speaker.affiliation }}</p>
+          <div class="kot3-dialog-abstract">{{ $speaker.abstract }}</div>
+          <form method="dialog" class="kot3-dialog-actions">
+            <button class="kot3-dialog-done" value="close">Close</button>
+          </form>
+        </div>
+      </dialog>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+  (() => {
+    if (window.kot3AbstractDialogsReady) return;
+    window.kot3AbstractDialogsReady = true;
+
+    document.addEventListener('click', (event) => {
+      const opener = event.target.closest('[data-abstract-dialog]');
+      if (opener) {
+        const dialog = document.getElementById(opener.dataset.abstractDialog);
+        if (dialog && typeof dialog.showModal === 'function') dialog.showModal();
+        return;
+      }
+
+      const dialog = event.target.closest('.kot3-abstract-dialog');
+      if (dialog && event.target === dialog) {
+        const bounds = dialog.getBoundingClientRect();
+        const inside = event.clientX >= bounds.left && event.clientX <= bounds.right &&
+          event.clientY >= bounds.top && event.clientY <= bounds.bottom;
+        if (!inside) dialog.close();
+      }
+    });
+  })();
+</script>

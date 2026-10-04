@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Yannis Kevrekidis",
+    "affiliation": "Johns Hopkins University",
+    "title": "Koopman eigenfunctions and their infinities",
+    "abstract": "Koopman eigenfunctions and their infinities"
+  },
+  {
+    "name": "Takashi Sakajo",
+    "affiliation": "Kyoto University",
+    "title": "Topological Mode Decompositions for Flow Pattern Time Series",
+    "abstract": "While Koopman operator analysis and Dynamic Mode Decomposition (DMD) are powerful, they can encounter limitations with strongly nonlinear and chaotic flows when applied to continuous physical fields. We address this by elevating Koopman spectral analysis to a discrete topological state space.\n\nUsing Topological Flow Data Analysis (TFDA), we coarse-grain continuous fluid patterns into symbolic Cyclic Ordered Tree (COT) expressions, effectively partitioning the state space into finite topological states. We demonstrate that the transition matrix of this symbolic time series serves as a rigorous finite-dimensional Ulam-type approximation of the Koopman operator.\n\nBased on this foundation, we propose two methodologies: Topological Dynamic Mode Decomposition (TDMD) to extract dominant periodic cycles from the Koopman spectrum, and Topological Event Mode Decomposition (TEMD) to isolate intermittent structural bifurcations in chaotic flows.\n\nValidated on the lid-driven cavity flow across periodic, quasi-periodic, and chaotic regimes, our framework successfully reconstructs macroscopic dynamics from a finite deterministic skeleton. This topological approximation bridges computational topology, symbolic dynamics, and operator theory, offering new avenues for complex pattern time series analysis."
+  },
+  {
+    "name": "Ian Abraham",
+    "affiliation": "University of Sydney/Yale University",
+    "title": "Challenges and Open Questions of Koopman Operators in Robotics",
+    "abstract": "Koopman operator theory offers a compelling promise for robotics in that it lifts non-trivial nonlinear dynamics into a space where they behave linearly, enabling the use of linear control, estimation, and stability analysis. Yet despite the enthusiasm, several open problems stand between this theory and reliable deployment. Choosing observable functions that yield a good finite-dimensional linear approximation remains largely heuristic, with no consensus on how to guarantee a lifting captures the dynamics that matter for control. This is especially true for contact-rich or hybrid robotic systems where dynamics switch abruptly and violate the smoothness assumptions of Koopman theory. This talk surveys these challenges, highlighting the successful and unsuccessful use-cases, and outlining where the theory needs to grow to make Koopman-theory practical for real robots."
+  },
+  {
+    "name": "Yuzuru Kato",
+    "affiliation": "Future University Hakodate",
+    "title": "Analysis of quantum synchronization based on the Koopman operator theory",
+    "abstract": "Quantum synchronization has recently attracted significant attention. In classical nonlinear dynamics, the asymptotic phase, a fundamental quantity closely connected to the Koopman operator theory, provides a powerful tool for analyzing limit-cycle oscillations and their synchronization. This concept has also been extended to stochastic oscillators, where the asymptotic phase is defined using an eigenfunction of the backward Fokker–Planck (Kolmogorov) operator, which is an infinitesimal generator of the Koopman operator for the stochastic dynamics. In this talk, inspired by the stochastic asymptotic phase, we introduce a fully quantum-mechanical definition of the asymptotic phase for quantum nonlinear oscillators using an eigenoperator of the adjoint Liouville superoperator, which serves as the infinitesimal generator of the Koopman operator for open quantum systems. The proposed quantum asymptotic phase reproduces the conventional asymptotic phase in the semiclassical regime and remains valid in the strong quantum regime, allowing the analysis of nontrivial quantum synchronization phenomena."
+  },
+  {
+    "name": "Kumiko Hori",
+    "affiliation": "National Institute for Fusion Science",
+    "title": "K/DMD to identify magnetohydrodynamic waves in planets",
+    "abstract": "We have utilised dynamic mode decomposition, an algorithm to approximate modes\nof the Koopman operator, to identify the intrinsic signals of magnetohydrodynamic (MHD) waves arising from interiors of the Earth and other planets. Those waves, and their \"seismology\", have the potential to probe the hidden, deep interiors but their clear identification has been hindered. Focusing on the linear theory, we first examined the data-driven technique in numerical simulations of spherical MHD convection and its dynamo action, and then applied to geophysical and astrophysical data, such as Jupiter's infrared brightness and the Earth's magnetic changes. Here one variant, called Hankel DMD, was adopted to distinguish standing and travelling wave modes. We found DMD was indeed capable of finding wavy signals in those limited timeseries and revealing the global,　spatiotemporal structure of torsional Alfvén waves in Jupiter, and possibly of magnetic Rossby waves in the Earth, for first time."
+  },
+  {
+    "name": "William Redman",
+    "affiliation": "Johns Hopkins University",
+    "title": "Finding diverse solutions in recurrent neural networks by dynamic similarity analysis regularization",
+    "abstract": "Many different neural network solutions exist that solve the same task. Charting this space of solutions has important implications in our understanding of deep learning and neuroscience, but to-date it remains challenging to systematically find different solutions. This is due, in part, to standard optimizers (e.g., stochastic gradient descent) having biases that lead them to converge to only certain solutions. We show that - by viewing recurrent neural networks (RNNs) as dynamical systems and estimating their associated Koopman operators - we can develop a regularization method that penalizes dynamically similar solutions. We find that this method can be used iteratively to find increasingly distinct RNNs, including ones that solve standard tasks in ways never before hypothesized."
+  },
+  {
+    "name": "Johannes Heeg",
+    "affiliation": "Technische Universität Ilmenau",
+    "title": "LTI Koopman Models for Control Systems: Existence and Modeling Bias",
+    "abstract": "Linear time-invariant (LTI) Koopman representations have been proposed to enable the application of linear control techniques, such as LQR and convex MPC, to nonlinear control systems. We characterize when such representations can exist exactly, showing that under a mild controllability condition they impose strong restrictions on the underlying dynamics. We then study the modeling bias arising when LTI Koopman models are applied to genuinely nonlinear systems."
+  },
+  {
+    "name": "Xin (Cindy) Yee",
+    "affiliation": "University of Colorado Colorado Springs",
+    "title": "Koopman Linear Quadratic Regulator Control of Microbubbles for Biomedical Applications",
+    "abstract": "Microbubbles are used in biomedicine for both diagnostic and therapeutic purposes that include ultrasound imaging and targeted drug delivery.  We applied a Koopman linear quadratic regulator (KLQR) to control the nonlinear oscillations of a EMB through the applied acoustic field.  We will use the acoustic echo emitted by the microbubble as an observable to estimate the microbubble states and control a spherical bubble using a Koopman Leuenberger observer framework. We will demonstrate the effectiveness of the modified KLQR controller in driving the Microbubble to follow arbitrarily prescribed radial oscillations and stabilize at nonequilibrium radii."
+  },
+  {
+    "name": "Riccardo Ferrari",
+    "affiliation": "Delft University of Technology",
+    "title": "Anomaly detection via the Koopman Operator (preliminary)",
+    "abstract": "[not available yet]"
+  },
+  {
+    "name": "Shun Hirose",
+    "affiliation": "Kyoto University",
+    "title": "Formal Synthesis of Robust Koopman-Model Predictive Control: A Case Study in AC-DC Power Conversion",
+    "abstract": "This letter proposes a formal synthesis of Robust Koopman-Model Predictive Control (RK-MPC), a novel data-driven approach to formal synthesis of systems with nonlinear dynamics. We formulate a novel optimization problem for RK-MPC by incorporating specifications described by Signal Temporal Logic and prove its closed-loop performance. Effectiveness of the proposed RK-MPC is evaluated by applying it to the reliable design of an AC-DC power converter."
+  },
+  {
+    "name": "Natsuki Katayama",
+    "affiliation": "Kyoto university",
+    "title": "Global Linearization of Parameterized Nonlinear Systems with Stable Equilibrium Point Using the Koopman Operator",
+    "abstract": "The Koopman operator framework enables global analysis of nonlinear systems through its inherent linearity. This study aims to clarify spectral properties of the Koopman operators for nonlinear systems with control inputs. To this end, we treat the inputs as parameters throughout this paper. We then introduce the Koopman operator for a parameterized dynamical system with a globally exponentially stable equilibrium point and analyze how eigenfunctions of the operator depend on the parameter. As a main result, we obtain a global linearization, which enables one to transform the nonlinear system into a finite-dimensional linear system, and we show that it depends continuously on the parameter. Subsequently, for a control-affine system, we investigate a condition under which the transformation providing a global bilinearization does not depend on the parameter. This provides the condition under which the global bilinearization for the control-affine system is independent of the parameter."
+  },
+  {
+    "name": "Igor Mezic",
+    "affiliation": "UCSB",
+    "title": "Koopman Operator for Control, Optimization and Synoptic Structures",
+    "abstract": "We will discuss application of spectral objects associated with the Koopman Operator for nonlinear controllability and observability, as well as in optimization, where new optimization algorithms are constructed clarifying the dynamics of, and outperforming the classical approaches such as  Newton preconditioning. We will also discuss pseudoeigenfunction constructions utilizing wavelet theory, and connect to unstable periodic orbits in chaotic flows. We also apply this to detection of synoptic structures in fluid flowssuch as Rayleigh-Benard convection."
+  },
+  {
+    "name": "Lu Shi",
+    "affiliation": "Tsinghua University",
+    "title": "Koopman Learning for Nonlinear Robotic Systems with Uncertain Time-Varying Dynamics",
+    "abstract": "will provide later."
+  },
+  {
+    "name": "Serge Richard",
+    "affiliation": "Nagoya University",
+    "title": "Elementary cellular automata: spectral properties of Koopman operator for finite periodic realizations",
+    "abstract": "During this presentation we shall look at the Koopman operators associated with finite periodic realizations of elementary cellular automata. The spectrum of this operator encompasses various properties of the underlying dynamical system, independently  of any initial condition. A characterization of these spectra is proposed, leading to a spectral classification of all elementary cellular automata. This work is thought as a preliminary step for studying the spectra of Koopman operators for infinite realizations of elementary cellular automata."
+  },
+  {
+    "name": "Armin Lederer",
+    "affiliation": "National University of Singapore",
+    "title": "Neural Koopman Distillation for Fast Robot Control Using Diffusion Models",
+    "abstract": "Diffusion models excel at generating diverse, multimodal trajectories and action sequences for robotic control, yet their iterative denoising process introduces latency that can constrain real-time closed-loop execution. To address this problem, we propose a neural Koopman distillation framework, which distills multistep diffusion inference into a single forward pass conditioned on observations and sampled noise. Specifically, we introduce a Factorized Dynamic Koopman (FDK) layer that models the denoising process through a latent linear transition. The noisy trajectory input is lifted into a latent space, where the FDK layer parameterizes a factorized linear operator with condition-dependent eigenvalues that adapt the noisy-to-denoised transition to the current context. We evaluate neural Koopman distillation across robot-control benchmarks that span locomotion,  state-based, and image-based manipulation, comparing against accelerated generative-policy baselines. The results demonstrate that one-step DNK outperforms accelerated generative-policy baselines in most evaluated settings while retaining teacher-comparable performance at millisecond-scale inference latency. On long-horizon manipulation tasks, DNK achieves competitive performance with substantially fewer inference parameters than the one-step policy baselines. Hardware experiments on a physical Kinova manipulator further demonstrate millisecond-scale inference and reduced task completion time."
+  },
+  {
+    "name": "Buzhou Xu",
+    "affiliation": "SINKO INDUSTRIES LTD., Japan (Master’s graduate in Mechanical Systems, Tokyo City University)",
+    "title": "Koopman-Based Residual Learning Using EDMD for Model Error Compensation in Quadrotor Control via Hierarchical Linearization",
+    "abstract": "A physical model always differs from actual flight behavior, and large model errors can reduce tracking accuracy. This study considers model error compensation for a quadrotor controlled using hierarchical linearization. We use flight data to learn the residual dynamics through extended dynamic mode decomposition (EDMD), which provides a finite-dimensional approximation in the Koopman operator framework. We use the learned residual model to compute a compensation input that supplements the nominal controller. By combining the physical model with residual learning, we aim to improve tracking accuracy while keeping the existing control framework. In this poster, we will present the compensation method and discuss its performance and limitations through numerical simulations, together with the current progress of flight experiments."
+  },
+  {
+    "name": "Alex Mauroy",
+    "affiliation": "University of Namur",
+    "title": "A dual Koopman framework for stability analysis in reproducing kernel Hilbert spaces",
+    "abstract": "This talk will present recent developments in global stability analysis based on the Koopman operator and its adjoint in reproducing kernel Hilbert spaces (RKHSs). We will first investigate the relationship between the global stability properties of the underlying dynamical system and the convergence properties of the Koopman semigroup in the RKHS, considering both primal and dual formulations. We will then show how the dual Koopman framework can be used to construct Lyapunov functions, as well as Lyapunov densities through their RKHS representing functions."
+  },
+  {
+    "name": "Harry Asada",
+    "affiliation": "MIT",
+    "title": "Koopman global linearization of contact dynamics for robot locomotion and manipulation enables elaborate control",
+    "abstract": "Controlling robots that dynamically engage in contact with their environment\nis a pressing challenge. Whether a legged robot making-and-breaking contact\nwith a floor, or a manipulator grasping objects, contact is everywhere.\nUnfortunately, the switching of dynamics at contact boundaries makes control\ndifficult. Predictive controllers face non-convex optimization problems when\ncontact is involved. Here, we overcome this difficulty by applying Koopman\noperators to subsume the segmented dynamics due to contact changes into a\nunified, globally-linear model in an embedding space. We show that viscoelastic\ncontact at robot-environment interactions underpins the use of Koopman\noperators. This methodology enables the convex Model Predictive\nControl of a legged robot, and the real-time control of amanipulator engaged\nin dynamic pushing. In this work, we show that our method allows robots to\ndiscover elaborate control strategies in real-time over time horizons with\nmultiple contact changes, and themethod is applicable to broad fields beyond\nrobotics."
+  },
+  {
+    "name": "Isao Ishikawa",
+    "affiliation": "Kyoto University",
+    "title": "Data-driven analysis of local analytic dynamics and its applications",
+    "abstract": "Recovering dynamical structure from sampled observations is a fundamental problem in data-driven analysis of nonlinear systems. In this talk, I present an approach based on pull-back operators on finite jet spaces, which encode Taylor expansions of observables at a given point. These operators provide canonical finite-dimensional descriptions of local dynamics and connect the Koopman operator viewpoint with the geometry and algebra of jets. Using reproducing kernel Hilbert spaces, I describe how the corresponding matrices can be estimated from sampled input-output pairs and discuss convergence guarantees under suitable analytic assumptions. Applications include the recovery of dynamical systems, the detection of invariant sets, and denoising based on the algebraic structure of local dynamics. I will discuss how these ideas can be used to extract dynamical information from finite observations and to improve robustness in the presence of noise."
+  },
+  {
+    "name": "Caroline Wormell",
+    "affiliation": "The University of Sydney",
+    "title": "Sampling pseudospectrum for data-driven matrices",
+    "abstract": "We typically use data to construct DMD and EDMD matrices, and use their eigenvalues and eigenfunctions to make sense of the underlying system. However, there is no objective way to assess which of these discrete eigenvalues are artefacts of finite data error, and which are reflections of a fully sampled matrix.\n\t\nWe present a sampling pseudospectrum that provides probabilistic information on the behaviour of finite-data eigenvalues in the complex plane, and a corresponding estimator that can be obtained by reprocessing a finite data sample. The estimator, which is computationally efficient to implement, allows us to test statistically for the location of the true eigenvalues. This gives us a rigorous and very general way to assess whether the patterns we extract from finite data are likely to be signal or noise."
+  },
+  {
+    "name": "David Liović",
+    "affiliation": "Faculty of Engineering, University of Rijeka",
+    "title": "Short-Horizon Blood Glucose Prediction",
+    "abstract": "Accurate short-horizon blood glucose prediction is important for timely diabetes decision support and remains challenging when only past continuous glucose monitoring (CGM) measurements are available. This work studies 30- and 60-minute blood glucose prediction from CGM data using streaming Hankel dynamic mode decomposition (DMD) models. The proposed approach relies solely on historical blood glucose values as input, avoiding additional observables such as carbohydrate intake, insulin administration, physical activity, or stress. This simplified input structure increases practical applicability in real-world settings where contextual data may be unavailable, incomplete, or inconsistently recorded. The models are evaluated on the OhioT1DM dataset according to the BGLP2020 rules and compared with the officially reported BGLP2020 challenge results. The analysis considers predictive accuracy across both horizons, with particular attention to errors occurring during rapid changes in glucose dynamics. Overall, the results indicate that the proposed computationally lightweight approach can provide useful short-horizon predictions across multiple individuals while revealing important limitations associated with abrupt changes in glucose dynamics."
+  },
+  {
+    "name": "Ervin Kamenar",
+    "affiliation": "University of Rijeka, Faculty of Engineering",
+    "title": "Koopman Methods Across Nonlinear Mechatronic and Robotic Systems",
+    "abstract": "Over the past several years, we have applied Koopman-driven modeling and control methods to a range of complex physical systems. This talk traces this progression, beginning with the control of a nanometric positioning system affected by nonlinear friction, followed by early data-driven modeling of pneumatic soft robots and, later, real-time control of inertial, highly nonlinear soft continuum robots.\n\nMore recently, these ideas have been extended to rehabilitation robotics, where Koopman methods coupled with surface electromyography (sEMG) sensing are used to estimate and predict hand grip force from forearm muscle activity as a step toward adaptive robotic assistance. Current work also includes using pneumatic artificial muscles as an experimental testbed to validate data-driven modeling and control methods, as well as bilinear Koopman models within model predictive contouring control of unmanned surface vessels.\n\nRather than focusing on a single formulation, the talk will discuss practical lessons across these real-world applications: the role of training data coverage, the choice of observables and delay coordinates, sensing noise, changing operating conditions, and the ability to capture different dynamical regimes of nonlinear systems. The aim is to highlight both where Koopman methods have proved useful in real systems and where important challenges remain."
+  },
+  {
+    "name": "Yuka Hashimoto",
+    "affiliation": "NTT / RIKEN AIP",
+    "title": "Koopman-based generalization bound for neural networks",
+    "abstract": "In evaluating the performance of neural networks, assessing their generalization performance, that is, how well a model fits previously unseen data, is important. Most existing works show that neural networks with low-rank weight matrices generalize well. However, some empirical studies have shown that networks with high-rank weight matrices can also generalize well. We represent neural networks using Koopman operators and derive a new generalization bound based on this representation. Our bound implies that neural networks with high-rank weight matrices can also achieve good generalization performance. However, our previous study requires assumptions that are not realistic in practice, such as smoothness constraints on the model and unbounded activation functions. Therefore, we further extend this framework by introducing a regularized model and develop a theoretical framework that can be applied to models used in practice."
+  },
+  {
+    "name": "Shu Hamanaka",
+    "affiliation": "Kyoto university",
+    "title": "Koopman Nonlinear Non-Hermitian Skin Effect",
+    "abstract": "Non-Hermitian skin effects are conventionally manifested as boundary localization of eigenstates in linear systems. In nonlinear settings, however, where eigenstates are no longer well defined, it becomes unclear how skin effects should be faithfully characterized. Here, we propose a Koopman-based characterization of nonlinear skin effects, in which localization is diagnosed in terms of Koopman eigenfunctions in a lifted observable space, rather than physical states. Using a nonlinear extension of the Hatano-Nelson model, we show that dominant Koopman eigenfunctions localize on higher-order observables, in stark contrast to linear skin effects confined to linear observables. This lifted-space localization manifests itself as a boundary-selective nonlinear response, providing a dynamical signature of the nonlinear skin effect. Our results identify the Koopman framework as\na natural setting in which skin effects unique to nonlinear non-Hermitian systems can be identified."
+  },
+  {
+    "name": "Yuanchao Xu",
+    "affiliation": "Kyoto University",
+    "title": "Koopman Spectral Analysis for Generative Modeling: An operator-theoretic perspective on particle sampling",
+    "abstract": "We propose Koopman Spectral Wasserstein Gradient Descent (KSWGD), a deterministic particle method for data-driven sampling of target measures arising from stochastic dynamics. The method uses Koopman spectral analysis to approximate the inverse Langevin generator that appears in Laplacian-adjusted Wasserstein gradient descent, without requiring explicit access to the potential defining the target distribution. For overdamped Langevin dynamics with invariant distribution $\\pi$, the Koopman generator of observables is mathematically equivalent to the negative Langevin generator. Estimated Koopman eigenpairs therefore provide a finite-rank spectral preconditioner for Wasserstein particle transport. We derive continuous-time convergence bounds that separate spectral truncation error from Koopman approximation error, and we relate the construction to a Feynman--Kac representation. Numerical experiments on a torus, a metastable quadruple-well system, and a stochastic Allen--Cahn equation show that the learned spectral preconditioner improves particle transport and sample quality relative to the tested baselines. The results show that KSWGD is effective when trajectory data are available but the target potential or score is hard to compute."
+  },
+  {
+    "name": "Zlatko Drmac",
+    "affiliation": "Faculty of Science, University of Zagreb",
+    "title": "On residuals and backward shadowing stability of the EDMD",
+    "abstract": "We introduce shadowing theory based backward stability analysis of data driven computational study of discrete dynamical systems in the framework of the Koopman composition operator K, the Extended Dynamic Mode Decomposition (DMD) and the Koopman Mode Decomposition (KMD). The proposed framework establishes, through the theory of shadowing, the missing theoretical link between operator approximation error in EDMD and trajectory-level accuracy.\nData driven spectral analysis of the dynamics using the approximate (computed) eigenpairs of K is cast in terms of the backward error analysis. The individual residuals of the computed eigenpairs are fused into a composite backward perturbation dK, so that the computed eigenpairs are exact for K-dK.  Data driven formula for computing approximate operator norm of dK is provided. Then, the impact of dK is carried over to the map and the initial condition of the given system, showing that the computed approximations and KMD based forecast of an observable of interest correspond exactly to its values along a pseudo--trajectory of the input system. In the final step,  the pseudo--trajectory is shadowed by an exact trajectory of the given system.  This interpretation of errors is in particular suitable in data driven scenarios where the data is contaminated by noise."
+  },
+  {
+    "name": "Lea Bold",
+    "affiliation": "TU Ilmenau",
+    "title": "Koopman-based modeling and stability for data-driven MPC of nonlinear systems",
+    "abstract": "Model predictive control (MPC) requires a sufficiently accurate prediction model of the system under control. Data-driven surrogate models provide an attractive alternative when an accurate model of the underlying dynamics is not available. However, replacing the original dynamics by a learned surrogate raises the question of whether closed-loop stability can still be guaranteed.\nIn this talk, we present exponential stability results for data-driven MPC with terminal conditions based on suitable error bounds between the original system and its data-driven surrogate. In particular, proportional error bounds, which vanish at the equilibrium, allow for stability guarantees despite the model mismatch. \nWe then consider surrogate models constructed within the Koopman operator framework using kernel extended dynamic mode decomposition (kEDMD). We discuss approximation error bounds for kEDMD and show how these bounds can be used to verify the assumptions required by the general MPC stability results. Numerical examples illustrate the theoretical findings."
+  },
+  {
+    "name": "Enoch Yeung",
+    "affiliation": "University of California, Santa Barbara",
+    "title": "Representing Network Structure of Physical Systems with Koopman Operators",
+    "abstract": "Koopman operators excel at learning the dynamics of many kinds of physical systems with nonlinear dynamics. Many physical systems inherently possess a notion of network structure, topology, or connectivity.  At the most basic level, a physical process with two observable quantities can exhibit three categories of network topology: decoupled, coupled in feedback, coupled with feedforward connectivity.    In this presentation, I will describe a simple approach for computing or visualizing network structure in Koopman operators.  This method directly follows from the canonical definitions of Koopman operators, especially when constructed to represent physical dynamics with state-inclusive observables.  We show that many of the standard notions of network topology are represented accurately by Koopman operators with this method.  Most importantly, we show that the Koopman operator represents network topology through more than adjacency matrices, but require accounting for the variable dependencies of the Koopman observable functions.  Lastly, we consider the case of partially measured states and show that projection observables in this context can obscure important network structure in the adjacency matrix.  These findings underscore a key observation: Koopman representations capture the network topology of nonlinear dynamics and thus require a nonlinear approach to representing network topology."
+  },
+  {
+    "name": "Tomislav Bazina",
+    "affiliation": "University of Rijeka, Faculty of Engineering",
+    "title": "Real-Time Koopman Modeling of sEMG Dynamics",
+    "abstract": "Real-time robotic assistance requires timely conversion of surface electromyography (sEMG) into control information under predictable computational deadlines. The pipeline uses Koopman modeling with a short personalized calibration phase followed by recurring online batches. It processes a single sEMG pair to estimate current grip force with a static Koopman model, while a reduced DMD/Koopman predictor forecasts force evolution over a short horizon. Separating calibration fitting from recurring online processing makes the computational stages explicit and organizes the implementation around a ROS 2 pipeline with explicit timing requirements. For recurring 0.5-second batches, the maximum observed compute time per batch was 27.1 ms against a 100-ms online target, excluding ROS 2 middleware and OS scheduling. Because sEMG mixes activity from multiple sources, ongoing work generalizes the pipeline from a single sEMG pair toward high-density sEMG grids while developing decomposition for source-specific temporal modeling. The goal is to preserve real-time constraints while improving the interpretability of source-specific temporal dynamics for Koopman/DMD modeling."
+  },
+  {
+    "name": "Naoya Takeishi",
+    "affiliation": "The University of Tokyo",
+    "title": "Learning neural observables for Koopman operators",
+    "abstract": "Learning neural observable functions for Koopman operator-based analysis has been practiced for almost a decade. In this talk, we get an overview of the relevant methodological development and applications, and discuss remaining challenges."
+  },
+  {
+    "name": "Norihisa Namura",
+    "affiliation": "Institute of Science Tokyo",
+    "title": "Data-driven stationary distribution control of a diffusion process via stochastic Koopman operator estimation",
+    "abstract": "We propose a feedback control method for the stationary distribution of an unknown diffusion process toward a prescribed form. The stochastic Koopman operator is estimated from time-series data obeying an Ito stochastic differential equation by extended dynamic mode decomposition (EDMD). The diffusion coefficient is then obtained by the estimated stationary probability density function and the eigenvalues of the Koopman operator. The control input can be computed by the Koopman eigenfunction expansion and the estimated diffusion coefficient. Numerical simulations demonstrate that the prescribed stationary distribution can be achieved using the control input estimated from data."
+  },
+  {
+    "name": "Takashi Hikihara",
+    "affiliation": "Kyoto University & National Institute of Informatics",
+    "title": "(Tentative) Koopman Spectral Arc Geometry for Diagnosing Attractor Retention in Dissipative Chaos",
+    "abstract": "Characterizing sustained dissipative chaos and distinguishing it from non-retained transient tangles remains a fundamental challenge in nonlinear dynamics, as classical geometric metrics based on spatial manifold intersections frequently yield false positives. To resolve this limitation without explicit manifold tracking, we present a data-driven framework based on Koopman operator theory and the geometric topology of its complex eigenvalue spectrum. By projecting Poincaré iterates into an extended nonlinear observable space, we demonstrate that dynamical transitions between transient chaos, sustained chaos, and periodic windows manifest as structural phase transitions of the Koopman spectrum—specifically between discrete point spectra and continuous spectral arcs. For sustained chaotic attractors, the operator maintains a dense, continuous spectral arc tightly bound along the unit circle ($\\vert{}\\mu\\vert{}=1$), directly reflecting persistent ergodic mixing and physical measure retention. In contrast, transient chaotic repellers cause spectral components to retract inward ($\\vert{}\\mu\\vert{}<1$), forming a curved arc associated with Pollicott-Ruelle resonances that quantifies transient decay rates before degenerating into discrete points. Furthermore, while individual eigenvalue points are susceptible to noise, the global profile $r(\\theta)$ of the spectral arc remains remarkably robust. This spectral arc geometry establishes a model-free, saddle-agnostic spectroscopy for resolving dynamic attractor retention in dissipative systems."
+  },
+  {
+    "name": "Yoshinobu Kawahara",
+    "affiliation": "The University of Osaka / RIKEN",
+    "title": "Koopman Operator Theory Meets State-Space Modeling: A Distribution Embedding Perspective",
+    "abstract": "Koopman operator theory describes nonlinear dynamics through the linear evolution of observables, while state-space modeling provides a foundation for inference, prediction, and control in dynamical systems. In this talk, I will explore how distribution embeddings bridge these perspectives for nonlinear stochastic systems. I will introduce embedded latent transfer operators (ELTOs), which propagate Hilbert-space embeddings of latent state distributions, and explain their relationship to Koopman operators acting on observables. Drawing on recent work, I will discuss how this connection supports a unified view of learning and inference in latent state-space models, encompassing prediction, state estimation, and dynamical analysis. The talk will highlight the complementary roles of operator-theoretic structure and probabilistic modeling, and discuss opportunities and challenges for learning useful representations of complex dynamics."
+  },
+  {
+    "name": "Marko Kozlov",
+    "affiliation": "University of Rijeka Faculty of Engineering",
+    "title": "Bilinear Koopman Model Predictive Contouring Control for Unmanned Surface Vessels",
+    "abstract": "Accurate high-speed path following of unmanned surface vessels (USVs) requires predictive models that capture vessel dynamics and controllers that balance tracking accuracy, forward progress, and actuator limitations. This work presents a bilinear Koopman model predictive contouring control (MPCC) framework that integrates guidance and actuator control. A predictive model is identified from recorded vessel states and propulsion commands, reducing reliance on explicitly parameterized hydrodynamic equations. Its bilinear structure represents interactions between lifted states and control inputs. Given a geometric reference path, the controller jointly optimizes path progress and differential-thrust commands, directly producing actuator inputs without an intermediate heading or velocity tracking controller. The objective balances contouring and lag errors, heading alignment, control effort, and forward progress subject to actuator constraints. A condensed sequential quadratic programming formulation with real-time iteration supports online computation by solving one local quadratic program per control cycle. The evaluation framework encompasses simulation and physical-vessel experiments, focusing on prediction accuracy, path-following performance across operating speeds, and computation time. The approach targets rapid and accurate autonomous maneuvering, including applications in USV competitions."
+  },
+  {
+    "name": "Jeff Moehlis",
+    "affiliation": "University of California, Santa Barbara",
+    "title": "Characterizing the Symmetry Properties of Koopman Eigenfunctions",
+    "abstract": "Symmetries of the governing equations of a dynamical system impose structure on its Koopman eigenfunctions. We develop a systematic approach for exploiting this structure that begins with known equivariance properties of the equations. From the irreducible representations of the corresponding symmetry group, we construct symmetry-adapted polynomial dictionaries for numerical approximation of the Koopman operator. Character tables can then be used to classify the resulting eigenfunctions by symmetry type and understand their organization into symmetry-related multiplets and associated eigenvalue degeneracies.\n\nThe approach also provides a framework for generating and classifying new Koopman eigenfunctions. Products of Koopman eigenfunctions are themselves eigenfunctions, while their symmetry properties are governed by tensor products of irreducible representations. Decomposing these tensor products yields selection-rule-like constraints on the symmetry types of product eigenfunctions.\n\nThis framework draws inspiration from the analysis of molecular vibrations and, more broadly, from applications of group theory in quantum mechanics, where irreducible representations, character tables, and selection rules provide a powerful organizing language. We bring analogous ideas to Koopman analysis to connect known symmetries of the governing equations with the computation, classification, and algebraic structure of Koopman eigenfunctions.\n\nThis is joint work with Jaime Cisternas."
+  },
+  {
+    "name": "Ela Đimoti",
+    "affiliation": "Department of Mathematics, Faculty of Science, University of Zagreb",
+    "title": "Robust Online DMD",
+    "abstract": "For a dynamical system $x_{k+1}=T(x_k)$ with potentially unknown mapping $T$, dynamic mode decomposition (DMD) is a data-driven method for revealing the underlying structure. In a streaming scenario, new snapshots become available in discrete time intervals. The dynamics might slowly (or abruptly) shift over time, making the oldest snapshots irrelevant for the current dynamics. DMD then has to be recomputed over a sliding data window with dynamically changing width. To that end it is important to have a fast and robust method to add and discard snapshots without starting from scratch. Unlike the existing state of the art streaming DMD methods that make use of the matrix $(XX^T)^{-1}$ to update DMD matrix $A$, we propose a new method that relies on truncated UTV decomposition of leading data matrix $X = Q_xT\\widetilde Q^T$ and its simple updates and downdates. This way, we avoid squaring the condition number ($\\kappa_2(XX^T) = \\kappa_2(X)^2$) resulting in a more robust method while maintaining similar time complexity. Our analysis and numerical experiments demonstrate superior numerical properties  that ensue  better forecasting skill. We extend our results to parametric DMD."
+  },
+  {
+    "name": "Vincent Thibeault",
+    "affiliation": "Yale University",
+    "title": "An inverse spectral problem for dynamics on complex networks",
+    "abstract": "In Koopman theory, dynamics on complex networks are represented in a linear-operator formalism akin to that of quantum mechanics. This representation enables spectral analysis and the identification of dominant modes governing emergent collective phenomena, but deriving spectral properties analytically is generally challenging. We thus reverse the usual spectral problem~: by prescribing eigenfunctions and eigenvalues of the Koopman operator, we characterize classes of dynamics on networks that admit them, including dynamics from the Kuramoto model [Thibeault et al., arXiv:2504.06248, arXiv:2607.02617] to recurrent neural networks and ecological dynamics. Solving this inverse spectral problem highlights relationships between spectral constraints in the Koopmanian perspective, geometric constraints on the vector field in the state space, and structural properties of complex network, including their low effective ranks [Thibeault et al., Nat. Phys., 2024]. We use this theoretical approach to identify approximate Koopman eigenfunctions and coarse-grained representations of calcium-imaging time series for the zebrafish brain [Hadjiabadi et al., Neuron, 2021] and biomass dynamics of a marine food web [Jacquet et al., Nat. Commun., 2016]. These lower-dimensional representations illustrate the impact of approximate Koopman eigenfunctions on the dominant modes of the dynamics, such as maintaining the neuronal activity in normal or pre-seizure regimes after a perturbation."
+  },
+  {
+    "name": "Yoshihiko Susuki",
+    "affiliation": "Kyoto University",
+    "title": "Kooman resolvents and frequency response of nonlinear systems",
+    "abstract": "tentative"
+  },
+  {
+    "name": "Keisuke Taga",
+    "affiliation": "Tokyo University of Science",
+    "title": "Koopman Linearization of the Kuramoto Model and Its Exact Trajectories",
+    "abstract": "The Kuramoto model is a foundational mathematical model for synchronization in systems such as cardiac cells and neurons, widely studied for its tractability. However, explicit analytical descriptions of the global dynamics have been limited to the trivial case of N=2. Here, we present a global linearization of the identical N=3 Kuramoto model using Koopman eigenfunctions, enabling the explicit construction of its analytical solutions."
+  },
+  {
+    "name": "Gen Kurosawa",
+    "affiliation": "RIKEN iTHEMS",
+    "title": "Exploring the Connection between Koopman Analysis and Renormalization Group in Biological Oscillators",
+    "abstract": "Imagine that you are in a room inside a cave, with no information about the time of day. The temperature and light remain constant, and you have no clock, computer, or mobile phone. Would you still wake up tomorrow and the day after? Most people would, because our bodies contain an internal biological clock that generates daily rhythms. Such rhythms are found not only in humans but also in many other organisms.\nIn this poster, we introduce important unsolved problems concerning biological time and show how we have studied them using some mathematical techniques from the renormalization group method (Gibo et al., PLoS Computational Biology, 2025). We also present our ongoing exploration of the connection between Koopman analysis and the renormalization group in biological oscillators. This work is a collaboration with Shingo Gibo, Teiji Kunihiro, and Tetsuo Hatsuda."
+  },
+  {
+    "name": "Yuta Miwa",
+    "affiliation": "Kyoto University",
+    "title": "An extended Perron–Frobenius operator filter for nonlinear state estimation",
+    "abstract": "We propose an extended Perron–Frobenius Operator Filter (PFOF) for nonlinear state estimation. The method learns the Perron–Frobenius operator, an infinite-dimensional\nlinear operator fully preserving properties of a nonlinear dynamical system, using the extended Dynamic Mode Decomposition (eDMD). This enables us to explicitly account for\nnon-Gaussian distributions exhibited by the nonlinear system within a linear-operator representation, while retaining the freedom to choose basis functions in eDMD. Through\nnumerical examples, we show that the extended PFOF achieves high computational efficiency and high estimation accuracy by exploiting the flexibility in the choice of basis functions in eDMD."
+  },
+  {
+    "name": "Antonio Navarra",
+    "affiliation": "CMCC",
+    "title": "Koopman and climate",
+    "abstract": "Various appliactions of Koopman methods to climate"
+  },
+  {
+    "name": "Joel W. Burdick",
+    "affiliation": "California Institute of Technology",
+    "title": "The Disturbance Aware Koopman Control Family (DA-KCF)",
+    "abstract": "This talk will introduce an extension to the Koopman Control Family (KCF) that accounts for external disturbances.  For example, consider a multi-rotor air-taxi that must fly in an urban environment, where there are complex wind patterns, such as vortex shedding from skyscrapers.  Classical disturbance rejection and robust control techniques may not be able to stabilize the vehicle in such conditions.  Instead, a tractable model of the air taxi's response to these transient, but not necessarily zero mean, disturbances is needed for vehicle planning and control.  To handle such situations, we introduce the Disturbance-Aware Koopman Control Family, and data-driven techniques to learn the DA-KCF operator.  The   practical idea is to learn a KCF operator when the vehicle operates in disturbance free conditions.  Then a disturbance operator is learned off-line from experiments which include the disturbance in the data generation process.  Finally, the disturbance operator is adapted online as needed to refine the model.  Experiments with multi-rotor drones demonstrate the ideas."
+  },
+  {
+    "name": "Daiya Shiojiri",
+    "affiliation": "Chiba University",
+    "title": "Analyzing Moisture Transport during the August 2021 Heavy Rainfall in Japan Using Koopman Mode Decomposition",
+    "abstract": "During 11-19 August 2021, prolonged and record-breaking heavy rainfall occurred over a wide area of western and eastern Japan. The event was associated with a stationary frontal zone and sustained moisture supply toward Japan under the characteristic large-scale atmospheric circulation. In this study, we investigate the spatiotemporal dynamics underlying this event by applying Koopman mode decomposition (KMD) to meteorological reanalysis data. KMD decomposes atmospheric fields into dynamically coherent modes characterized by their temporal frequencies and spatial structures. Following the formulation of linear wave propagation of Koopman modes, we derive local linear wavenumber vectors from their spatial phase distributions to characterize the propagation of individual modes. The resulting propagation characteristics are compared with precipitation and moisture-related fields to investigate the pathways of atmospheric disturbances and water vapor associated with the heavy-rainfall regions.This modal analysis enables us to separate spatiotemporal processes with different characteristic frequencies and to examine how their propagation and moisture transport contribute to the development and persistence of the August 2021 heavy-rainfall event."
+  },
+  {
+    "name": "Karl Worthmann",
+    "affiliation": "TU Ilmenau",
+    "title": "Koopman operator in systems and control: error bounds, invariance, and predictive control with closed-loop guarantees",
+    "abstract": "The linear, but infinite-dimensional Koopman operator enables analysis, prediction, and control of nonlinear dynamical systems through the lens of observable functions. Extended Dynamic Mode Decomposition (EDMD) and kernel EDMD are widely applied and computationally attractive methods to approximate the action of the Koopman operator. \n\nFirst, we give insight into the error analysis - both for deterministic and stochastic dynamics. \nHereby, we provide function-space dependent characterizations of Koopman invariance and compactness. Further, we propose a novel verifiable regularity condition tailored to conditional expectation operators and conditional mean embeddings. \n\nSecond, we consider nonlinear model predictive control (MPC) using data-driven surrogate models in the optimization step: We establish asymptotic stability of the origin w.r.t. the MPC closed loop and verify the imposed assumptions on the surrogate model using Koopman operator theory."
+  },
+  {
+    "name": "Satoshi Oishi",
+    "affiliation": "The university of Osaka",
+    "title": "Bifurcation Prediction via a Parametric Koopman Operator Approach",
+    "abstract": "Predicting the dynamics of a parameterized system at unobserved parameter values from limited time-series data at other parameter values is essential for forecasting critical transitions, reconstructing bifurcation diagrams, and designing parameter-dependent control in complex systems. To this end, we present a method for constructing a parameterized extended dynamic mode decomposition (EDMD) for such systems. By combining EDMD models learned from observed time-series data at each observed parameter value, the method interpolates/extrapolates the system's behavior to unseen parameter values."
+  },
+  {
+    "name": "YAMAMOTO Taichi",
+    "affiliation": "University of Tokyo, Graduate school of Frontier Science",
+    "title": "Koopman Spectral Analysis via Ridge Regression in Reproducing Kernel Hilbert Spaces",
+    "abstract": "While data-driven estimation of Koopman eigenfunctions has become a standard approach, existing methods typically assume noise-free observations. To address this limitation, we propose an estimation framework incorporating L2 (Ridge) regularization within a reproducing kernel Hilbert space (RKHS). By introducing sampling operators on the Hilbert space, we formulate the operator estimation problem as a regularized least-squares problem. The solution is explicitly derived via a Tikhonov-regularized inverse coupled with low-rank approximation. We theoretically establish that this formulation is a rigorous, regularized extension of Kernel Extended Dynamic Mode Decomposition (KEDMD).\nWe demonstrate the performance of our approach using limit cycle oscillators, specifically the Stuart-Landau and FitzHugh-Nagumo models. Unlike conventional methods that fail under noisy conditions or extended sampling intervals, our approach successfully recovers the underlying phase and amplitude eigenfunctions. These results demonstrate that regularization provides an effective mechanism for controlling the excessive expressiveness of infinite-dimensional Koopman representations, leading to more robust Koopman spectral estimation."
+  },
+  {
+    "name": "Domenico Lippolis",
+    "affiliation": "RIKEN - iTHEMS",
+    "title": "Probing the resolution of chaos",
+    "abstract": "The noise that physical systems are affected by limits the resolution that can be attained in partitioning their state space. Using unstable periodic orbits, we determine the `finest attainable' partition of a chaotic system, and replace the Fokker-Planck evolution by a finite matrix, acting as a Koopman (or Perron-Frobenius) operator. Its spectrum yields long-time expectation values and fluctuations of observables of interest, such as escape rates, Lyapunov exponents, and diffusivity."
+  },
+  {
+    "name": "Yueheng Lan",
+    "affiliation": "Beijing University of Posts and Telecommunications",
+    "title": "The symbolic partition of nonlinear dynamics based on Koopman analysis",
+    "abstract": "Symbolic dynamics is an important tool for nonlinear dynamics, which neglects the metric information but retains the topology of consecutive points, establishing a one-to-one correspondence between symbol sequences and trajectories and realizing the unification of geometry and dynamics. It does not require an equation of motion and is invariant under coordinate transformation, which plays critical roles in the study of complex dynamics. Nevertheless, one major hindrance lies in the partition of the phase space into disparate symbolic regions. Most of the previous research needs the construction of stable or unstable manifold or the detection of sufficiently many periodic orbits, which pose considerable difficulty, especially for high-dimensional systems. Here we switch our focus from individual trajectories to observables in phase space and utilize the Koopman analysis to directly investigate time series, accomplishing the symbolic partition based on proper eigenfunctions of the Koopman operator."
+  }
+]
+

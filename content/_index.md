@@ -83,16 +83,12 @@ sections:
       spacing:
         padding: ["7rem", "0", "7rem", "0"]
 
-  - block: markdown
+  - block: speakers-list
     id: speakers
     content:
       title: "Confirmed Speakers"
       text: |-
-        ## Announcements are coming soon.
-
-        Names, affiliations, and talk titles will be added here as the program takes shape.
-
-        ### To be announced
+        Speaker names, affiliations, and presentation titles are listed below. Select **View abstract** to read a presentation abstract.
     design:
       columns: '1'
       css_class: kot3-speakers
