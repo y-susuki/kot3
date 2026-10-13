@@ -1,0 +1,11 @@
+{{/* Preserve transparency and fit the complete KOT3 symbol on a square canvas. */}}
+{{ $size := . | default 32 }}
+{{ $source := resources.Get "media/logo/logo_005.png" }}
+{{ $side := math.Max $source.Width $source.Height | int }}
+{{ $horizontal := sub $side $source.Width }}
+{{ $vertical := sub $side $source.Height }}
+{{ $left := div $horizontal 2 }}
+{{ $top := div $vertical 2 }}
+{{ $square := $source.Filter (images.Padding $top (sub $horizontal $left) (sub $vertical $top) $left "#00000000") }}
+{{ $icon := $square.Resize (printf "%dx%d png" $size $size) }}
+{{ return (dict "resource" $icon "type" "image/png" "is_svg" false "RelPermalink" $icon.RelPermalink) }}

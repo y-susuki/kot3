@@ -25,8 +25,8 @@ sections:
       animations: true
       background:
         color:
-          light: "#00205b"
-          dark: "#00205b"
+          light: "#f5eff5"
+          dark: "#f5eff5"
       spacing:
         padding: ["8rem", "0", "6rem", "0"]
 

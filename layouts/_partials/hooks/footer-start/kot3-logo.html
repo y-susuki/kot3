@@ -1,0 +1,6 @@
+{{ $logo := resources.Get "media/logo/logo_001.png" }}
+<a class="kot3-footer-brand" href="{{ site.Home.RelPermalink }}" aria-label="KOT3 — Home">
+  <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}"
+       alt="KOT3 — Koopman Operator Theory: Fundamentals, Approximations and Applications 3"
+       loading="lazy" decoding="async">
+</a>

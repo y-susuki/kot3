@@ -7,21 +7,21 @@ hugoblox:
     tagline: "Koopman Operator Theory · Kyoto 2026"
     description: "The third international workshop on Koopman Operator Theory, December 11–13, 2026 at Kyoto University."
   theme:
-    mode: dark
+    mode: light
     pack: default
     colors:
-      primary: "#00205b"
-      secondary: "#f2c94c"
-      neutral: slate
+      primary: "#4c234a"
+      secondary: "#c83c30"
+      neutral: stone
     surfaces:
-      background: "#00205b"
-      foreground: "#f4f6fa"
+      background: "#ffffff"
+      foreground: "#493d47"
       header:
-        background: "#00205b"
-        foreground: "#ffffff"
+        background: "#faf7f9"
+        foreground: "#4c234a"
       footer:
-        background: "#00163f"
-        foreground: "#ffffff"
+        background: "#ffffff"
+        foreground: "#493d47"
   typography:
     pack: academic
   layout:
@@ -31,6 +31,8 @@ hugoblox:
   header:
     enable: true
     style: navbar
+    logo: logo/logo_004.png
+    show_title: false
     sticky: true
     align: center
     search: false
