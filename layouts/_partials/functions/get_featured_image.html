@@ -1,0 +1,25 @@
+{{/* Return a page image, with a dedicated share card for the workshop homepage. */}}
+{{ $resource := false }}
+{{ if .IsHome }}
+  {{/* Keep the original logo sharp and centered on an opaque lavender canvas. */}}
+  {{ $logo := (resources.Get "media/logo/logo_001.png").Fit "1000x430 png" }}
+  {{ $horizontal := sub 1200 $logo.Width }}
+  {{ $vertical := sub 630 $logo.Height }}
+  {{ $left := div $horizontal 2 }}
+  {{ $top := div $vertical 2 }}
+  {{ $resource = $logo.Filter (images.Padding $top (sub $horizontal $left) (sub $vertical $top) $left "#f5eff5") }}
+{{ else }}
+{{/* Search for an image "*featured*" in page folder */}}
+{{ $resource = (.Resources.ByType "image").GetMatch "*featured*" }}
+{{ if not (reflect.IsResource $resource) }}
+  {{/* Otherwise fall back the image file specified in front matter */}}
+  {{ $image_params := partial "functions/get_page_image_params.html" . }}
+  {{ $filename := $image_params.filename | default "" }}
+  {{/* Search in page folder */}}
+  {{ $resource = (.Resources.ByType "image").GetMatch $filename }}
+  {{/* Otherwise in `assets/media/` folder */}}
+  {{ if not (reflect.IsResource $resource) }} {{ $resource = resources.GetMatch (path.Join "media" $filename) }} {{ end }}
+{{ end }}
+
+{{ end }}
+{{ return $resource }}
