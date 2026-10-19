@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: keiko-yamamoto
+name: {display: Keiko Yamamoto, family: Yamamoto, given: Keiko}
+role: Japan
+affiliations: [{name: Kyoto University}]
+links: []
+user_groups: [Organizing Committee]
+weight: 9

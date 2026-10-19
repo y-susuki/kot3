@@ -1,0 +1,8 @@
+schema: hugoblox/author/v1
+slug: tam-willy-nguyen
+name: {display: Tam Willy Nguyen, family: Nguyen, given: Tam Willy}
+role: Japan
+affiliations: [{name: Kyoto University}]
+links: []
+user_groups: [Organizing Committee]
+weight: 7
