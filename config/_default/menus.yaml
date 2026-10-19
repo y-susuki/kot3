@@ -17,6 +17,9 @@ main:
   - name: Accommodation
     url: '#accommodation'
     weight: 60
+  - name: Banquet
+    url: 'https://peatix.com/event/5232411'
+    weight: 65
   - name: Contact
     url: '#contact'
     weight: 70
