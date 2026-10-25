@@ -341,5 +341,12 @@
     "affiliation": "Beijing University of Posts and Telecommunications",
     "title": "The symbolic partition of nonlinear dynamics based on Koopman analysis",
     "abstract": "Symbolic dynamics is an important tool for nonlinear dynamics, which neglects the metric information but retains the topology of consecutive points, establishing a one-to-one correspondence between symbol sequences and trajectories and realizing the unification of geometry and dynamics. It does not require an equation of motion and is invariant under coordinate transformation, which plays critical roles in the study of complex dynamics. Nevertheless, one major hindrance lies in the partition of the phase space into disparate symbolic regions. Most of the previous research needs the construction of stable or unstable manifold or the detection of sufficiently many periodic orbits, which pose considerable difficulty, especially for high-dimensional systems. Here we switch our focus from individual trajectories to observables in phase space and utilize the Koopman analysis to directly investigate time series, accomplishing the symbolic partition based on proper eigenfunctions of the Koopman operator."
+  },
+  {
+    "name": "Taiki Yamada",
+    "family_sort": "yamada",
+    "affiliation": "The University of Tokyo",
+    "title": "Locating Attractors via Singularities of Analytic Koopman Eigenfunctions",
+    "abstract": "JetDMD estimates analytic Koopman eigenfunctions near an equilibrium from data, through their Taylor coefficients at the equilibrium, but how such local information relates to global structures such as attractors remains unclear. The principal eigenfunction of an unstable equilibrium is defined on its entire repelling region and diverges at the boundary, where an attractor may lie. In this poster, we present an explicit example of this relation for the Hopf normal form. We derive the analytic eigenfunction, which is unique up to scaling, in closed form and show that its singularity coincides exactly with the limit cycle. In this example, the attractor appears as the singularity of a function determined by local data at the equilibrium. This suggests that global invariant structures may be recovered from local information through analytic continuation, in which the accuracy of the Taylor coefficients plays an important role. We also discuss directions for extending this observation."
   }
 ]
