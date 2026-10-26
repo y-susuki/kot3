@@ -1,0 +1,123 @@
+{{/* Hugo Blox: KOT3 timetable */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+{{ $title := "Program" }}
+{{ with index $content "title" }}{{ $title = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+{{ $text := "" }}
+{{ with index $content "text" }}{{ $text = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+{{ $speakers := hugo.Data.speakers }}
+
+<div class="kot3-program-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <header class="kot3-program-header">
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">{{ $title }}</h2>
+    {{ with $text }}<div class="kot3-program-intro">{{ . }}</div>{{ end }}
+  </header>
+
+  <div class="kot3-timetable-tabs" data-timetable-tabs>
+    <div class="kot3-timetable-tablist" role="tablist" aria-label="Workshop days">
+      {{ range $dayIndex, $day := hugo.Data.program }}
+        <button
+          class="kot3-timetable-tab"
+          id="program-tab-{{ $day.date }}"
+          type="button"
+          role="tab"
+          aria-selected="{{ if eq $dayIndex 0 }}true{{ else }}false{{ end }}"
+          aria-controls="program-panel-{{ $day.date }}"
+          tabindex="{{ if eq $dayIndex 0 }}0{{ else }}-1{{ end }}"
+        >
+          <span>{{ $day.day }}</span>
+          <strong>{{ $day.date_label }}</strong>
+        </button>
+      {{ end }}
+    </div>
+
+    <div class="kot3-timetable-panels">
+    {{ range $dayIndex, $day := hugo.Data.program }}
+      <section
+        class="kot3-timetable-day"
+        id="program-panel-{{ $day.date }}"
+        role="tabpanel"
+        aria-labelledby="program-tab-{{ $day.date }}"
+        {{ if ne $dayIndex 0 }}hidden{{ end }}
+      >
+        <ol class="kot3-timetable-list">
+          {{ range $day.items }}
+            {{ $item := . }}
+            <li class="kot3-timetable-item kot3-timetable-item--{{ .type }}">
+              <p class="kot3-timetable-time">
+                <time>{{ .start }}</time>{{ with .end }}<span aria-hidden="true">–</span><time>{{ . }}</time>{{ end }}
+              </p>
+              <div class="kot3-timetable-detail">
+                {{ if eq .type "speaker" }}
+                  {{ $matches := where $speakers "name" .speaker }}
+                  {{ with index $matches 0 }}
+                    {{ $speakerAnchor := printf "#speaker-%s" (.name | urlize) | safeURL }}
+                    <a href="{{ $speakerAnchor }}">{{ .name }} <span>({{ .affiliation }})</span></a>
+                  {{ else }}
+                    <span>{{ .speaker }}</span>
+                  {{ end }}
+                {{ else if eq .type "poster" }}
+                  <h4>{{ .label }}</h4>
+                  {{ with .note }}<p class="kot3-timetable-note">{{ . }}</p>{{ end }}
+                  <ul class="kot3-poster-list">
+                    {{ range .speakers }}
+                      {{ $posterMatches := where $speakers "name" . }}
+                      {{ with index $posterMatches 0 }}
+                        {{ $speakerAnchor := printf "#speaker-%s" (.name | urlize) | safeURL }}
+                        <li><a href="{{ $speakerAnchor }}">{{ .name }} <span>({{ .affiliation }})</span></a></li>
+                      {{ else }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                {{ else }}
+                  {{ with $item.url }}<a class="kot3-timetable-event-link" href="{{ . }}" target="_blank" rel="noopener">{{ $item.label }}</a>{{ else }}<h4>{{ $item.label }}</h4>{{ end }}
+                  {{ with .note }}<p class="kot3-timetable-note">{{ . }}</p>{{ end }}
+                {{ end }}
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+  (() => {
+    document.querySelectorAll('[data-timetable-tabs]').forEach((root) => {
+      const tabs = Array.from(root.querySelectorAll('[role="tab"]'));
+      const panels = Array.from(root.querySelectorAll('[role="tabpanel"]'));
+
+      const activate = (selectedTab, moveFocus = false) => {
+        tabs.forEach((tab) => {
+          const isSelected = tab === selectedTab;
+          tab.setAttribute('aria-selected', String(isSelected));
+          tab.tabIndex = isSelected ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.id !== selectedTab.getAttribute('aria-controls');
+        });
+        if (moveFocus) selectedTab.focus();
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activate(tab));
+        tab.addEventListener('keydown', (event) => {
+          let nextIndex = null;
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % tabs.length;
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabs.length - 1;
+          if (nextIndex === null) return;
+          event.preventDefault();
+          activate(tabs[nextIndex], true);
+        });
+      });
+    });
+  })();
+</script>

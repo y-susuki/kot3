@@ -95,25 +95,14 @@ sections:
       spacing:
         padding: ["7rem", "0", "7rem", "0"]
 
-  - block: markdown
+  - block: program-timetable
     id: program
     content:
       title: "Program"
       text: |-
-        <div class="kot3-program-grid">
-          <article>
-            <h3>Friday · December 11</h3>
-            <p>Opening day — detailed schedule to be announced.</p>
-          </article>
-          <article>
-            <h3>Saturday · December 12</h3>
-            <p>Full workshop day — detailed schedule to be announced.</p>
-          </article>
-          <article>
-            <h3>Sunday · December 13</h3>
-            <p>Closing day — detailed schedule to be announced.</p>
-          </article>
-        </div>
+        **Tentative program as of October 27. It is subject to change. Please note that the duration listed for each oral presentation includes a 5-minute Q&A.**
+
+        All times are in Japan Standard Time (JST). Select a day to view its timetable, and select a speaker’s name to view their presentation information.
     design:
       columns: '1'
       css_class: kot3-program
@@ -223,9 +212,15 @@ sections:
     content:
       title: "Supported by"
       text: |-
-        [**SCAT** — Support Center for Advanced Telecommunications Technology Research](https://www.scat.or.jp/en/)
+        <a class="kot3-sponsor-logo" href="https://www.scat.or.jp/en/" target="_blank" rel="noopener">
+          <img src="media/sponsors/scat-logo.png" alt="SCAT — Support Center for Advanced Telecommunications Technology Research">
+        </a>
 
         [**The Kyoto University Foundation**](https://www.kyodai-zaidan.or.jp/result/r8/#jyosei02)
+
+        <a class="kot3-sponsor-logo" href="https://beyond-predictions.com/en/moonshot/ms_about_core/" target="_blank" rel="noopener">
+          <img src="media/sponsors/amagoi_logo_tate.jpg" alt="AMAGOI">
+        </a>
     design:
       columns: '1'
       css_class: kot3-sponsors

@@ -43,4 +43,5 @@ yarn-error.log*
 /.openai/
 /.wrangler/
 /outputs/
+/output/
 /work/

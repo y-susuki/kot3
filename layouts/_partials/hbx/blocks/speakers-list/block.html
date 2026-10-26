@@ -24,7 +24,8 @@
     {{ range $index, $speaker := $speakers }}
       {{ $dialogID := printf "speaker-abstract-%d" $index }}
       {{ $titleID := printf "speaker-title-%d" $index }}
-      <article class="kot3-speaker-card" role="listitem">
+      {{ $speakerID := printf "speaker-%s" ($speaker.name | urlize) }}
+      <article class="kot3-speaker-card" id="{{ $speakerID }}" role="listitem">
         <div class="kot3-speaker-card-body">
           <h3>{{ $speaker.name }}</h3>
           <p class="kot3-speaker-affiliation">{{ $speaker.affiliation }}</p>
