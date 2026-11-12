@@ -66,8 +66,8 @@
     "name": "Shun Hirose",
     "family_sort": "hirose",
     "affiliation": "Kyoto University",
-    "title": "Formal Synthesis of Robust Koopman-Model Predictive Control: A Case Study in AC-DC Power Conversion",
-    "abstract": "This letter proposes a formal synthesis of Robust Koopman-Model Predictive Control (RK-MPC), a novel data-driven approach to formal synthesis of systems with nonlinear dynamics. We formulate a novel optimization problem for RK-MPC by incorporating specifications described by Signal Temporal Logic and prove its closed-loop performance. Effectiveness of the proposed RK-MPC is evaluated by applying it to the reliable design of an AC-DC power converter."
+    "title": "Koopman Temporal Logic and Model Predictive Control of Nonlinear Systems: Koopman Operator Meets Formal Method",
+    "abstract": "In this presentation, we provide a mathematical tool for verifying and synthesizing nonlinear systems in a formal manner based on Koopman operator theory. Specifically, we propose a novel temporal logic, which we call Koopman Temporal Logic (KTL), towards specifying properties of systems with nonlinear dynamics. We first introduce KTL, including its syntax, Boolean semantics, and quantitative semantics. Next, we propose a formulation of Model Predictive Control (MPC) from a control specification described by KTL. Effectiveness and computational efficiency of the proposed MPC formulation are evaluated by applying it to a reliable design of AC-DC power conversion."
   },
   {
     "name": "Natsuki Katayama",
