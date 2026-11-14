@@ -348,5 +348,12 @@
     "affiliation": "The University of Tokyo",
     "title": "Locating Attractors via Singularities of Analytic Koopman Eigenfunctions",
     "abstract": "JetDMD estimates analytic Koopman eigenfunctions near an equilibrium from data, through their Taylor coefficients at the equilibrium, but how such local information relates to global structures such as attractors remains unclear. The principal eigenfunction of an unstable equilibrium is defined on its entire repelling region and diverges at the boundary, where an attractor may lie. In this poster, we present an explicit example of this relation for the Hopf normal form. We derive the analytic eigenfunction, which is unique up to scaling, in closed form and show that its singularity coincides exactly with the limit cycle. In this example, the attractor appears as the singularity of a function determined by local data at the equilibrium. This suggests that global invariant structures may be recovered from local information through analytic continuation, in which the accuracy of the Taylor coefficients plays an important role. We also discuss directions for extending this observation."
+  },
+  {
+    "name": "Marcos Netto",
+    "family_sort": "netto",
+    "affiliation": "New Jersey Institute of Technology",
+    "title": "Learn Locally, Certify Globally: Koopman Eigenfunctions and the Basin of Attraction in Power Systems",
+    "abstract": "Koopman eigenfunctions associated with the Jacobian eigenvalues of a stable equilibrium are Lyapunov functions defined exactly on its basin of attraction. We turn this into a computational procedure for power systems. Eigenfunctions estimated by extended dynamic mode decomposition (EDMD) are written as functions of the state, made to vanish at the equilibrium by centering the lifted variable $\\cos\\delta$, and verified on a grid with the model: two Lyapunov candidates from the EDMD spectrum certify up to 66% of the basin of a single-machine infinite-bus system from data in the linear region. The Koopman semigroup property then extends the EDMD-Lie eigenfunction to the whole basin, recovered at the grid resolution with its isostables and isochrons."
   }
 ]
