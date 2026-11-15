@@ -174,6 +174,7 @@ main .text-sm { font-size: max(1rem, 16px) !important; line-height: 1.55; }
 }
 .kot3-speaker-card:target { outline: 4px solid var(--kot-accent); outline-offset: 4px; }
 .kot3-speaker-card h3 { margin: 0; color: var(--kot-brand); font-size: 1.3rem; }
+.kot3-speaker-status { color: #9b1c1c; font-size: .9em; }
 .kot3-speaker-affiliation { margin: .55rem 0 0; color: #675663; font-size: 1rem; line-height: 1.5; }
 .kot3-speaker-talk-title { margin: 1.25rem 0 0; color: var(--kot-ink); font-weight: 700; line-height: 1.45; }
 .kot3-abstract-button,

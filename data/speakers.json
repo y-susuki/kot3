@@ -297,6 +297,7 @@
     "name": "Joel W. Burdick",
     "family_sort": "burdick",
     "affiliation": "California Institute of Technology",
+    "status": "cancelled",
     "title": "The Disturbance Aware Koopman Control Family (DA-KCF)",
     "abstract": "This talk will introduce an extension to the Koopman Control Family (KCF) that accounts for external disturbances.  For example, consider a multi-rotor air-taxi that must fly in an urban environment, where there are complex wind patterns, such as vortex shedding from skyscrapers.  Classical disturbance rejection and robust control techniques may not be able to stabilize the vehicle in such conditions.  Instead, a tractable model of the air taxi's response to these transient, but not necessarily zero mean, disturbances is needed for vehicle planning and control.  To handle such situations, we introduce the Disturbance-Aware Koopman Control Family, and data-driven techniques to learn the DA-KCF operator.  The   practical idea is to learn a KCF operator when the vehicle operates in disturbance free conditions.  Then a disturbance operator is learned off-line from experiments which include the disturbance in the data generation process.  Finally, the disturbance operator is adapted online as needed to refine the model.  Experiments with multi-rotor drones demonstrate the ideas."
   },

@@ -27,7 +27,7 @@
       {{ $speakerID := printf "speaker-%s" ($speaker.name | urlize) }}
       <article class="kot3-speaker-card" id="{{ $speakerID }}" role="listitem">
         <div class="kot3-speaker-card-body">
-          <h3>{{ $speaker.name }}</h3>
+          <h3>{{ $speaker.name }}{{ with $speaker.status }} <span class="kot3-speaker-status">({{ . }})</span>{{ end }}</h3>
           <p class="kot3-speaker-affiliation">{{ $speaker.affiliation }}</p>
           <p class="kot3-speaker-talk-title">{{ $speaker.title }}</p>
         </div>
@@ -48,7 +48,7 @@
           </form>
           <p class="kot3-dialog-eyebrow">Abstract</p>
           <h3 id="{{ $titleID }}">{{ $speaker.title }}</h3>
-          <p class="kot3-dialog-speaker">{{ $speaker.name }} · {{ $speaker.affiliation }}</p>
+          <p class="kot3-dialog-speaker">{{ $speaker.name }}{{ with $speaker.status }} ({{ . }}){{ end }} · {{ $speaker.affiliation }}</p>
           <div class="kot3-dialog-abstract">{{ $speaker.abstract }}</div>
           <form method="dialog" class="kot3-dialog-actions">
             <button class="kot3-dialog-done" value="close">Close</button>
