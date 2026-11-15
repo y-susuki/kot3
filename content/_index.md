@@ -100,7 +100,7 @@ sections:
     content:
       title: "Program"
       text: |-
-        **Tentative program as of October 27. It is subject to change. Please note that the duration listed for each oral presentation includes a 5-minute Q&A.**
+        **Tentative program as of November 14. It is subject to change. Please note that the duration listed for each oral presentation includes a 5-minute Q&A.**
 
         All times are in Japan Standard Time (JST). Select a day to view its timetable, and select a speaker’s name to view their presentation information.
     design:
