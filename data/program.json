@@ -52,10 +52,10 @@
     "items": [
       {"start": "09:30", "type": "event", "label": "Registration desk opens"},
       {"start": "10:00", "end": "10:25", "type": "speaker", "speaker": "Igor Mezic"},
-      {"start": "10:25", "end": "10:50", "type": "speaker", "speaker": "Yannis Kevrekidis"},
-      {"start": "11:00", "end": "11:20", "type": "speaker", "speaker": "Alex Mauroy"},
-      {"start": "11:20", "end": "11:40", "type": "speaker", "speaker": "Isao Ishikawa"},
-      {"start": "11:40", "end": "12:00", "type": "speaker", "speaker": "Caroline Wormell"},
+      {"start": "10:25", "end": "10:50", "type": "speaker", "speaker": "Alex Mauroy"},
+      {"start": "11:00", "end": "11:20", "type": "speaker", "speaker": "Isao Ishikawa"},
+      {"start": "11:20", "end": "11:40", "type": "speaker", "speaker": "Caroline Wormell"},
+      {"start": "11:40", "end": "12:00", "type": "event", "label": "Group photo"},
       {"start": "12:00", "end": "13:00", "type": "break", "label": "Lunch break"},
       {"start": "13:00", "end": "13:20", "type": "speaker", "speaker": "Jeff Moehlis"},
       {"start": "13:20", "end": "13:40", "type": "speaker", "speaker": "Yueheng Lan"},
@@ -69,7 +69,6 @@
       {"start": "16:10", "end": "16:30", "type": "speaker", "speaker": "William Redman"},
       {"start": "16:30", "end": "16:50", "type": "speaker", "speaker": "Yoshihiko Susuki"},
       {"start": "16:50", "end": "17:15", "type": "speaker", "speaker": "Karl Worthmann"},
-      {"start": "17:15", "type": "event", "label": "Group photo"},
       {
         "start": "19:00",
         "end": "21:00",
