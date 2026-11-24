@@ -357,5 +357,12 @@
     "affiliation": "New Jersey Institute of Technology",
     "title": "Learn Locally, Certify Globally: Koopman Eigenfunctions and the Basin of Attraction in Power Systems",
     "abstract": "Koopman eigenfunctions associated with the Jacobian eigenvalues of a stable equilibrium are Lyapunov functions defined exactly on its basin of attraction. We turn this into a computational procedure for power systems. Eigenfunctions estimated by extended dynamic mode decomposition (EDMD) are written as functions of the state, made to vanish at the equilibrium by centering the lifted variable $\\cos\\delta$, and verified on a grid with the model: two Lyapunov candidates from the EDMD spectrum certify up to 66% of the basin of a single-machine infinite-bus system from data in the linear region. The Koopman semigroup property then extends the EDMD-Lie eigenfunction to the whole basin, recovered at the grid resolution with its isostables and isochrons."
+  },
+  {
+    "name": "Max Beier",
+    "family_sort": "beier",
+    "affiliation": "Technical University of Munich",
+    "title": "TBA",
+    "abstract": "TBA"
   }
 ]
