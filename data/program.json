@@ -11,7 +11,7 @@
       {"start": "14:10", "end": "14:30", "type": "speaker", "speaker": "Armin Lederer"},
       {"start": "14:30", "end": "14:50", "type": "speaker", "speaker": "Lu Shi"},
       {"start": "15:00", "end": "15:30", "type": "break", "label": "Coffee break"},
-      {"start": "15:30", "end": "15:55", "type": "speaker", "speaker": "Antonio Navarra"},
+      {"start": "15:30", "end": "15:55", "type": "speaker", "speaker": "Karl Worthmann"},
       {"start": "15:55", "end": "16:15", "type": "speaker", "speaker": "Takashi Sakajo"},
       {"start": "16:30", "end": "16:50", "type": "speaker", "speaker": "Kumiko Hori"},
       {"start": "16:50", "end": "17:10", "type": "speaker", "speaker": "Naoya Takeishi"},
@@ -69,7 +69,7 @@
       {"start": "15:50", "end": "16:10", "type": "speaker", "speaker": "Yuka Hashimoto"},
       {"start": "16:10", "end": "16:30", "type": "speaker", "speaker": "William Redman"},
       {"start": "16:30", "end": "16:50", "type": "speaker", "speaker": "Yoshihiko Susuki"},
-      {"start": "16:50", "end": "17:15", "type": "speaker", "speaker": "Karl Worthmann"},
+      {"start": "16:50", "end": "17:15", "type": "speaker", "speaker": "Antonio Navarra"},
       {
         "start": "19:00",
         "end": "21:00",
